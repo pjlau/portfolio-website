@@ -56,13 +56,15 @@
   <section id="contact">
     <h2>聯繫我</h2>
     <form id="contact-form" action="https://formspree.io/f/xrbavzwz" method="POST">
-        <label for="name">姓名</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">電子郵件</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">訊息</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">送出</button>
+      <label for="name">姓名</label>
+      <input type="text" id="name" name="_replyto" required>  <!-- 使用 name="_replyto" 來設定回覆 E-mail -->
+      <label for="email">電子郵件</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">訊息</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="hidden" name="_subject" value="新聯繫訊息來自作品集網站">  <!-- 可選：設定主旨 -->
+      <input type="hidden" name="_next" value="">  <!-- 可選：成功後重定向頁面，留空則不重定向 -->
+      <button type="submit">送出</button>
     </form>
     <div class="social-links">
       <a href="https://github.com/pjlau" target="_blank">GitHub</a>
