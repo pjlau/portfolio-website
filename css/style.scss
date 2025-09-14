@@ -1,0 +1,175 @@
+// 變數
+$primary-color: #2c3e50;
+$accent-color: #3498db;
+
+// 重置樣式
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: $primary-color;
+}
+
+// 導航欄
+nav {
+  background: $primary-color;
+  padding: 1rem;
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      margin: 0 1rem;
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
+
+// 首頁區
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+}
+
+// 專案區
+#projects {
+  padding: 2rem;
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .project-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: $accent-color;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background: darken($accent-color, 10%);
+      }
+    }
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    .project-card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      text-align: center;
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      h3 {
+        margin: 0.5rem 0;
+      }
+      a {
+        color: $accent-color;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// 聯繫區
+#contact {
+  padding: 2rem;
+  text-align: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 1rem;
+    input, textarea {
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      padding: 0.75rem;
+      background: $accent-color;
+      color: white;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background: darken($accent-color, 10%);
+      }
+    }
+  }
+  .social-links {
+    margin-top: 1rem;
+    a {
+      margin: 0 1rem;
+      color: $accent-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// 頁腳
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: $primary-color;
+  color: white;
+}
+
+// 響應式設計
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #home {
+    padding: 1rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

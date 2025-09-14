@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="個人作品集 - 展示我的前端與後端專案">
+  <meta name="keywords" content="前端工程師, 後端工程師, 作品集, React, JavaScript">
+  <meta name="author" content="你的名字">
+  <title>你的名字 - 個人作品集</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 導航欄 -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#projects">專案</a></li>
+        <li><a href="#contact">聯繫</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 首頁區 -->
+  <section id="home">
+    <img src="images/profile.jpg" alt="你的名字 頭像" class="profile-img">
+    <h1>你的名字</h1>
+    <p>前端與後端工程師 | 熱衷於打造優質的 Web 應用</p>
+  </section>
+
+  <!-- 專案區 -->
+  <section id="projects">
+    <h2>我的專案</h2>
+    <div class="project-filter">
+      <button data-filter="all">全部</button>
+      <button data-filter="frontend">前端</button>
+      <button data-filter="backend">後端</button>
+    </div>
+    <div class="project-grid">
+      <div class="project-card" data-category="frontend">
+        <img src="images/project1.jpg" alt="專案 1">
+        <h3>前端專案 1</h3>
+        <p>使用 React 打造的響應式網站</p>
+        <a href="https://github.com/your-username/project1" target="_blank">查看專案</a>
+      </div>
+      <div class="project-card" data-category="backend">
+        <img src="images/project2.jpg" alt="專案 2">
+        <h3>後端專案 1</h3>
+        <p>使用 Node.js 和 MongoDB 構建的 API</p>
+        <a href="https://github.com/your-username/project2" target="_blank">查看專案</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯繫區 -->
+  <section id="contact">
+    <h2>聯繫我</h2>
+    <form id="contact-form">
+      <label for="name">姓名</label>
+      <input type="text" id="name" required>
+      <label for="email">電子郵件</label>
+      <input type="email" id="email" required>
+      <label for="message">訊息</label>
+      <textarea id="message" required></textarea>
+      <button type="submit">送出</button>
+    </form>
+    <div class="social-links">
+      <a href="https://github.com/your-username" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- 頁腳 -->
+  <footer>
+    <p>&copy; 2025 你的名字. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
