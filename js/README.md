@@ -15,9 +15,9 @@
 - **JavaScript**: ES6+、DOM 操作、事件處理
 
 ## 部署
-- 網站已部署到 GitHub Pages: [查看網站](https://your-username.github.io/portfolio-website)
+- 網站已部署到 GitHub Pages: [查看網站](https://pjlau.github.io/portfolio-website)
 - 本地運行：克隆 repository, 開啟 `index.html` 或使用 `npx sass --watch css/style.scss:css/style.css` 編譯 SASS。
 
 ## 安裝
    ```bash
-   git clone https://github.com/your-username/portfolio-website.git
+   git clone https://github.com/pjlau/portfolio-website.git
