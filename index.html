@@ -55,14 +55,14 @@
   <!-- 聯繫區 -->
   <section id="contact">
     <h2>聯繫我</h2>
-    <form id="contact-form">
-      <label for="name">姓名</label>
-      <input type="text" id="name" required>
-      <label for="email">電子郵件</label>
-      <input type="email" id="email" required>
-      <label for="message">訊息</label>
-      <textarea id="message" required></textarea>
-      <button type="submit">送出</button>
+    <form id="contact-form" action="https://formspree.io/f/xrbavzwz" method="POST">
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">電子郵件</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">訊息</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">送出</button>
     </form>
     <div class="social-links">
       <a href="https://github.com/pjlau" target="_blank">GitHub</a>

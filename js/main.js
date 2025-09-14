@@ -26,10 +26,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    // 模擬 API 提交（實際可連接到後端）
-    console.log('表單數據：', { name, email, message });
-    alert('感謝您的訊息！（此為模擬提交）');
-    
-    form.reset();
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        alert('感謝您的訊息！已成功送出！');
+        form.reset();
+      } else {
+        alert('送出失敗，請稍後再試。');
+      }
+    } catch (error) {
+      console.error('錯誤：', error);
+      alert('發生錯誤，請檢查控制台並重試。');
+    }
   });
 });
