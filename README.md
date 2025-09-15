@@ -1,23 +1,25 @@
-# 個人作品集網站
+# Personal Portfolio Website
 
-這是一個使用 HTML、CSS(SASS)、JavaScript(ES6+) 構建的個人作品集網站，展示我的前端與後端專案。
+This is a personal portfolio website built using HTML, CSS (SASS), and JavaScript (ES6+) to showcase my frontend and backend projects.
 
-## 功能
-- 響應式設計（手機、平板、桌面）
-- 語義化 HTML 和 SEO 優化
-- Flexbox 和 Grid 佈局
-- 專案過濾功能（前端/後端）
-- 聯繫表單（模擬提交）
+## Features
+- Responsive design (mobile, tablet, desktop)
+- Semantic HTML and SEO optimization
+- Flexbox and Grid layouts
+- Project filtering functionality (frontend/backend)
+- Contact form (simulated submission)
 
 ## Tech Stack
-- **HTML**: 語義化標籤、表單
-- **CSS**: SASS、Flexbox、Grid、響應式設計
-- **JavaScript**: ES6+、DOM 操作、事件處理
+- **HTML**: Semantic tags, forms
+- **CSS**: SASS, Flexbox, Grid, responsive design
+- **JavaScript**: ES6+, DOM manipulation, event handling
 
-## 部署
-- 網站已部署到 GitHub Pages: [查看網站](https://pjlau.github.io/portfolio-website)
-- 本地運行：克隆 repository, 開啟 `index.html` 或使用 `npx sass --watch css/style.scss:css/style.css` 編譯 SASS。
+## Deployment
+- Website deployed to GitHub Pages: [View Website](https://pjlau.github.io/portfolio-website)
+- Local setup: Clone the repository, open `index.html`, or use `npx sass --watch css/style.scss:css/style.css` to compile SASS.
 
-## 安裝
+
+
+## Installation
    ```bash
    git clone https://github.com/pjlau/portfolio-website.git
